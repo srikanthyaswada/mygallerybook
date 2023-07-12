@@ -1,0 +1,391 @@
+.main {
+    background-image: linear-gradient(165deg, #5533ff 50%, white 10%);
+}
+
+.logo {
+    width: 100%;
+    height: 95px;
+}
+
+.space {
+    flex: 1 1 auto;
+}
+
+.topnav {
+    background: linear-gradient(95deg, #5533ff 30%, #25ddf5 100%);
+}
+
+.links {
+    color: white !important;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.links:hover {
+    border-bottom: 2px solid white;
+}
+
+.card1 {
+    margin-top: 100px;
+    border: 0;
+    background-color: transparent;
+}
+
+
+.note1 {
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+
+.note2 {
+    font-size: 18px;
+    color: white;
+    font-family: "Rubik", sans-serif;
+}
+
+.card2 {
+    margin-top: 90px;
+    border: 0;
+    background-color: transparent;
+}
+
+// About section
+
+.card3 {
+    margin-top: 120px;
+    border: 0;
+    background-color: transparent;
+    padding: 20px;
+}
+
+.head1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #151948;
+}
+
+.para1 {
+    color: #272a5fb2;
+    line-height: 26px;
+    display: block;
+
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.row2 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+// Installation section
+.i-section {
+    padding: 130px 0px 160px 0px;
+}
+
+.i-card:hover {
+    border: 1px solid rgb(96, 253, 96);
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+// features section
+.feature-section {
+    padding: 0px 0px 100px 0px;
+}
+
+.features-card {
+    border-bottom: 2px solid #ededed;
+    border-right: 2px solid #ededed;
+    background-color: #f8f9fa;
+}
+
+.features-card:hover {
+    background-color: #fff;
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.11),
+        0 24px 46px var(--box-shadow-color);
+
+    .icons {
+        color: white;
+    }
+
+    .icon-circle {
+        width: 100%;
+        height: 110px;
+        border-radius: 50%;
+        background-color: #1d1ac4;
+    }
+}
+
+.features-head {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: "Poppins", sans-serif;
+    color: #151948;
+    padding: 20px;
+    text-align: center;
+}
+
+.icon-circle {
+    width: 100%;
+    height: 110px;
+    border-radius: 50%;
+    background-color: #e3fff2;
+    border: 1px solid blue;
+}
+
+
+.icons {
+    position: relative;
+    font-size: 40px;
+    top: 35px;
+    left: 38px;
+}
+
+
+
+
+
+// showccase section
+
+.bg-showcase {
+    background: linear-gradient(155deg, #5533ff 40%, #25ddf5 80%) !important;
+}
+
+.mgb-imgs {
+    width: 100%;
+    height: 500px;
+}
+
+.carousel-indicators {
+    top: 550px;
+}
+
+.showcase-card {
+    border: 0;
+    background: transparent;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.showcase-title {
+    color: #fff;
+    margin-top: 80px;
+    font-size: 35px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    position: relative;
+    line-height: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+// pricing
+.section {
+    padding: 60px 0px;
+}
+
+.paicing-main {
+    background-color: #edeef1;
+}
+
+.section-title {
+    font-size: 35px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    position: relative;
+    line-height: 30px;
+    font-family: "Poppins", sans-serif;
+    padding: 50px;
+}
+
+.price-cards {
+    background-color: white;
+    border: 1px solid rgb(186, 186, 190);
+    // box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: transform ease .5s, box-shadow ease .5s;
+}
+
+.price-cards:hover {
+    border: 1px solid rgb(96, 253, 96);
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+
+}
+
+.pricing-head {
+    font-size: 20px;
+    color: #151948;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+    font-family: "Poppins", sans-serif;
+}
+
+.price-month {
+    color: #1d1ac4;
+    font-size: 50px;
+    font-family: "Poppins", sans-serif;
+}
+
+p {
+    font-family: "Rubik", sans-serif;
+    color: #44586f;
+    font-weight: 500;
+}
+
+
+
+// My Gallery Book
+
+.c-images {
+    height: 600px;
+}
+
+// get in touch
+
+.ips {
+    padding: 20px;
+    height: 60px;
+    border: 1px solid #a9acac;
+    border-radius: 5px;
+}
+
+.ips:focus {
+    background-color: rgb(207, 247, 207);
+}
+
+.txt {
+    padding: 20px;
+    border: 1px solid #a9acac;
+    border-radius: 5px;
+}
+
+.txt:focus {
+    background-color: #ccf9ec;
+}
+
+
+::placeholder {
+    font-size: 16px;
+}
+
+.contact-img {
+    padding: 40px;
+}
+
+.submit-btn {
+    background-color: #3935f0;
+    width: 30%;
+    padding: 12px;
+    color: white;
+}
+
+.submit-btn:hover {
+    margin: 1px;
+}
+
+// footer section
+
+.footer-section {
+    padding-top: 130px;
+    background: #180e29;
+    margin: 0;
+}
+
+.mgb-logo {
+    padding-top: 0;
+    margin: 50px;
+    margin-top: 0;
+    vertical-align: middle;
+    border-style: none;
+    width: 50%;
+    height: 130px;
+}
+
+.footer-title {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding-left: 35px;
+    font-family: "Poppins", sans-serif;
+}
+
+.f-li {
+    display: block;
+}
+
+.f-links {
+    color: #e2e2e2;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.icon-title {
+    color: #1d1e1f;
+}
+
+.f-icon {
+    font-size: 30px;
+    color: #1746a6;
+}
+
+.t-icon {
+    font-size: 30px;
+    color: #1DA1F2;
+}
+
+.i-icon {
+    font-size: 30px;
+    color: rgb(247, 45, 79);
+}
+
+.l-icon {
+    font-size: 30px;
+    color: rgb(9, 67, 226);
+}
+
+.y-icon {
+    font-size: 30px;
+    color: rgb(247, 18, 30);
+}
+
+// .up-icon {
+//     float: right;
+//     padding: 10px;
+//     color: white;
+//     font-size: 25px;
+//     border-radius: 60px;
+//     background: linear-gradient(35deg, rgb(115, 188, 247),rgb(119, 8, 238));
+// }
+.up-icon {
+    position: fixed;
+    bottom: 18px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    line-height: 50px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50px;
+    color: white;
+    font-size: 25px;
+    background: #5533ff;
+    background: linear-gradient(-150deg, #5533ff 40%, #25ddf5 100%);
+    box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
+    z-index: 9999999
+}
