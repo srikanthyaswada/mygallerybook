@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <!-- Navbar section -->
-    <div class="row sticky-top topnav" id="homepage">
+    <div class="row sticky-top topnav">
         <div class="col-sm-1"></div>
         <div class="col-sm-11">
             <nav class="navbar navbar-expand-lg">
@@ -17,25 +17,26 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="">
-                                <a class="nav-link links ms-4" href="#homepage">Home</a>
+                                <a class="nav-link links ms-4" (click)="scrollToHome(homepage)">Home</a>
                             </li>
                             <li class="">
-                                <a class="nav-link links ms-4 hideurl" href="#about">About</a>
+                                <a class="nav-link links ms-4" (click)="scrollToAbout(about)">About</a>
                             </li>
                             <li class="">
-                                <a class="nav-link links ms-4" href="#features">Features</a>
+                                <a class="nav-link links ms-4" (click)="scrollToFeatures(features)">Features</a>
                             </li>
                             <li class="">
-                                <a class="nav-link links ms-4" href="#showcase">Showcase</a>
+                                <a class="nav-link links ms-4" (click)="scrollToShowcase(showcase)">Showcase</a>
                             </li>
                             <li class="">
-                                <a class="nav-link links ms-4" href="#price">Pricing</a>
+                                <a class="nav-link links ms-4" (click)="scrollToPrice(price)">Pricing</a>
                             </li>
                             <li class="">
-                                <a class="nav-link links ms-4" href="#contact">Contact</a>
+                                <a class="nav-link links ms-4" (click)="scrollToContact(contact)">Contact</a>
                             </li>
                             <li class="">
-                                <button class="btn btn-primary ms-4">DOWNLOAD</button>
+                                <a class="btn btn-primary ms-4"
+                                    href="https://play.google.com/store/apps/details?id=com.vitasoft.Mygallerybook">DOWNLOAD</a>
                             </li>
                         </ul>
                     </div>
@@ -44,7 +45,7 @@
         </div>
     </div>
     <!-- Welcome and About section -->
-    <div class="row row1 main">
+    <div class="row row1 main" [ngClass]="statusClass" #homepage>
         <div class="col-sm-1"></div>
         <div class="col-sm-5">
             <div class="card card1">
@@ -62,10 +63,12 @@
                 </span>
             </div>
             <div class="mt-4">
-                <a href=""> <img src="/assets/images/googleplay.png" alt="" width="40%" height="80"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.vitasoft.Mygallerybook"> <img
+                        src="/assets/images/googleplay.png" alt="" width="40%" height="80"></a>
             </div>
             <div class="mt-2">
-                <a href=""> <img src="/assets/images/appstore.png" alt="" width="40%" height="80"></a>
+                <a href="https://apps.apple.com/us/app/id1528348936"> <img src="/assets/images/appstore.png" alt=""
+                        width="40%" height="80"></a>
             </div>
         </div>
 
@@ -79,7 +82,7 @@
 
         <!-- About Section -->
 
-        <div id="about">
+        <div #about>
             <div class="row row2">
                 <div class="col-sm-1"></div>
                 <div class="col-sm-5 about">
@@ -170,11 +173,11 @@
         </div>
     </section>
     <!-- Features section -->
-    <section class="feature-section">
-        <div class="row row3 p-" id="features">
+    <section class="feature-section" #features>
+        <div class="row row3 p-">
             <h1 class="features-head features">App Features</h1>
             <div class="col-sm-1">
-    
+
             </div>
             <div class="col-sm-5 p-0 m-0">
                 <div class="features-card p-4">
@@ -183,7 +186,7 @@
                             <div class="icon-circle">
                                 <i class="bi bi-cloud-upload icons"></i>
                             </div>
-    
+
                         </div>
                         <div class="col-sm-9">
                             <h2> High Ressolution</h2>
@@ -193,7 +196,7 @@
                             </p>
                         </div>
                     </div>
-    
+
                 </div>
                 <div class="features-card p-4">
                     <div class="row">
@@ -201,7 +204,7 @@
                             <div class="icon-circle">
                                 <i class="bi bi-lightbulb icons"></i>
                             </div>
-    
+
                         </div>
                         <div class="col-sm-9">
                             <h2> Clean & Trendy Design</h2>
@@ -211,7 +214,7 @@
                             </p>
                         </div>
                     </div>
-    
+
                 </div>
                 <div class="features-card p-4">
                     <div class="row">
@@ -219,7 +222,7 @@
                             <div class="icon-circle">
                                 <i class="bi bi-printer icons"></i>
                             </div>
-    
+
                         </div>
                         <div class="col-sm-9">
                             <h2> Assured quality print</h2>
@@ -230,17 +233,17 @@
                             </p>
                         </div>
                     </div>
-    
+
                 </div>
             </div>
             <div class="col-sm-5 p-0 m-0">
                 <div class="features-card p-4">
-                    <div class="row"> 
+                    <div class="row">
                         <div class="col-sm-3">
                             <div class="icon-circle">
                                 <i class="bi bi-shield-check icons"></i>
                             </div>
-    
+
                         </div>
                         <div class="col-sm-9">
                             <h2> Security</h2>
@@ -250,7 +253,7 @@
                             </p>
                         </div>
                     </div>
-    
+
                 </div>
                 <div class="features-card p-4">
                     <div class="row">
@@ -258,7 +261,7 @@
                             <div class="icon-circle">
                                 <i class="bi bi-images icons"></i>
                             </div>
-    
+
                         </div>
                         <div class="col-sm-9">
                             <h2>Always View Status</h2>
@@ -268,7 +271,7 @@
                             </p>
                         </div>
                     </div>
-    
+
                 </div>
                 <div class="features-card p-4">
                     <div class="row">
@@ -276,7 +279,7 @@
                             <div class="icon-circle">
                                 <i class="bi bi-cash-coin icons"></i>
                             </div>
-    
+
                         </div>
                         <div class="col-sm-9">
                             <h2>Pay Securely</h2>
@@ -287,16 +290,16 @@
                             </p>
                         </div>
                     </div>
-    
+
                 </div>
             </div>
             <div class="col-sm-1"></div>
         </div>
     </section>
- 
+
 
     <!-- App Showcase Section -->
-    <div class="showcase" id="showcase">
+    <div class="showcase" #showcase>
         <div class="row bg-showcase">
             <div class="row text-center">
                 <h1 class="p-4 text-white showcase-title">App UI ShowCase</h1>
@@ -362,7 +365,7 @@
     </div>
     <!-- pricing -->
 
-    <div class="row paicing-main" id="price">
+    <div class="row paicing-main" #price>
         <div class="col-sm-1"></div>
         <div class="col-sm-10">
             <section id="pricing" class="section">
@@ -500,55 +503,55 @@
                             <div class="carousel-item active">
                                 <img src="/assets/images/birthday.jpg" class="d-block w-100 c-images" />
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h2 class="bg-light p-2 text-primary">Birth Party</h2>
+                                    <h2 class="c-btn p-2 text-white">Birth Party</h2>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="/assets/images/everyday_happiness.jpeg" class="d-block w-100 c-images" />
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h2 class="bg-light p-2 text-primary">Happiness</h2>
+                                    <h2 class="c-btn p-2 text-white">Happiness</h2>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="/assets/images/graduation_day.webp" class="d-block w-100 c-images" />
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h2 class="bg-light p-2 text-primary">Graduation Day</h2>
+                                    <h2 class="c-btn p-2 text-white">Graduation Day</h2>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="/assets/images/Holidays.jpg" class="d-block w-100 c-images" />
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h2 class="bg-light p-2 text-primary">Holidays</h2>
+                                    <h2 class="c-btn p-2 text-white">Holidays</h2>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="/assets/images/kids_art.jpg" class="d-block w-100 c-images" />
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h2 class="bg-light p-2 text-primary">Kids Art</h2>
+                                    <h2 class="c-btn p-2 text-white">Kids Art</h2>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="/assets/images/portfolio.jpg" class="d-block w-100 c-images" />
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h2 class="bg-light p-2 text-primary">Portfolio</h2>
+                                    <h2 class="c-btn p-2 text-white">Portfolio</h2>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="/assets/images/product_catelogue.jpg" class="d-block w-100 c-images" />
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h2 class="bg-light p-2 text-primary">Products</h2>
+                                    <h2 class="c-btn p-2 text-white">Products</h2>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="/assets/images/recipe_book.jpg" class="d-block w-100 c-images" />
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h2 class="bg-light p-2 text-primary">Recipe Book</h2>
+                                    <h2 class="c-btn p-2 text-white">Recipe Book</h2>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img src="/assets/images/social_media.webp" class="d-block w-100 c-images" />
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h2 class="bg-light p-2 text-primary">Social Media</h2>
+                                    <h2 class="c-btn p-2 text-white">Social Media</h2>
                                 </div>
                             </div>
                         </div>
@@ -571,7 +574,7 @@
     </section>
 
     <!-- Contact section -->
-    <section id="contact">
+    <section class="contact-section" #contact>
         <div class="row">
             <div class="col-sm-1"></div>
             <div class="col-sm-10">
@@ -631,7 +634,7 @@
     </section>
 
     <!-- Footer section -->
-    <section class="row ">
+    <section class="">
         <div class="row footer-section">
             <div class="col-sm-4">
                 <div>
@@ -644,7 +647,7 @@
                 </h1>
                 <ul class="f-ul">
                     <li class="f-li">
-                        <a class="page-scroll f-links" href="#business-plan"> - About</a>
+                        <a class="page-scroll f-links" href="#about"> - About</a>
                     </li>
                     <li class="f-li">
                         <a class="page-scroll f-links" href="#features"> - Features</a>
@@ -657,7 +660,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-5">
                 <h1 class="footer-title">
                     Download App
                 </h1>
@@ -670,20 +673,24 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <div class="row text-center bg-light m-0">
-            <div class="row">
-                <h2 class="text-center icon-title mt-2">Follow us on </h2>
-            </div>
-            <div class="col-sm-12 m-auto mb-4">
-                <i class="bi bi-facebook f-icon m-2"></i>
-                <i class="bi bi-twitter t-icon m-2"></i>
-                <i class="bi bi-instagram i-icon m-2"></i>
-                <i class="bi bi-linkedin l-icon m-2"></i>
-                <i class="bi bi-youtube y-icon m-2"></i>
-                <span> <a href="#homepage"> <i class="bi bi-chevron-up up-icon"></i></a> </span>
+
+            <div class="row text-center">
+                <div class="row">
+                    <h3 class="text-center fw-bold icon-title mt-2">Follow us on </h3>
+                </div>
+                <div class="col-sm-12 m-auto mb-4">
+                    <i class="bi bi-facebook f-icon m-2"></i>
+                    <i class="bi bi-twitter t-icon m-2"></i>
+                    <i class="bi bi-instagram i-icon m-2"></i>
+                    <i class="bi bi-linkedin l-icon m-2"></i>
+                    <i class="bi bi-youtube y-icon m-2"></i>
+                    <span>
+                        <a (click)="scrollToHome(homepage)">
+                            <i class="bi bi-chevron-up up-icon"></i>
+                        </a>
+                    </span>
+                </div>
             </div>
         </div>
     </section>
-
 </div>

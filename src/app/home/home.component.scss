@@ -1,5 +1,10 @@
 .main {
     background-image: linear-gradient(165deg, #5533ff 50%, white 10%);
+    margin-top: 0px;
+}
+
+.active {
+    padding: 35px;
 }
 
 .logo {
@@ -100,7 +105,7 @@
 
 // features section
 .feature-section {
-    padding: 0px 0px 100px 0px;
+    padding: 150px 0px;
 }
 
 .features-card {
@@ -161,6 +166,7 @@
 
 .bg-showcase {
     background: linear-gradient(155deg, #5533ff 40%, #25ddf5 80%) !important;
+    padding: 50px 0px;
 }
 
 .mgb-imgs {
@@ -192,7 +198,7 @@
 
 // pricing
 .section {
-    padding: 60px 0px;
+    padding: 100px 0px;
 }
 
 .paicing-main {
@@ -247,9 +253,20 @@ p {
 
 
 // My Gallery Book
+.contact-section {
+    padding: 100px 0px;
+}
 
 .c-images {
     height: 600px;
+}
+
+.c-btn {
+    color: #fff;
+    background: rgba(0, 0, 0, .4);
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
 }
 
 // get in touch
@@ -298,9 +315,8 @@ p {
 // footer section
 
 .footer-section {
-    padding-top: 130px;
+    padding-top: 20px;
     background: #180e29;
-    margin: 0;
 }
 
 .mgb-logo {
@@ -317,7 +333,7 @@ p {
     color: #fff;
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     padding-left: 35px;
     font-family: "Poppins", sans-serif;
 }
@@ -333,45 +349,39 @@ p {
     line-height: 30px;
     text-decoration: none;
     background-color: transparent;
+    font-family: "Poppins", sans-serif;
 }
 
 .icon-title {
-    color: #1d1e1f;
+    color: #9ba6b1;
+    margin-bottom: 5px;
 }
 
 .f-icon {
-    font-size: 30px;
+    font-size: 25px;
     color: #1746a6;
 }
 
 .t-icon {
-    font-size: 30px;
+    font-size: 25px;
     color: #1DA1F2;
 }
 
 .i-icon {
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(247, 45, 79);
 }
 
 .l-icon {
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(9, 67, 226);
 }
 
 .y-icon {
-    font-size: 30px;
+    font-size: 25px;
     color: rgb(247, 18, 30);
 }
 
-// .up-icon {
-//     float: right;
-//     padding: 10px;
-//     color: white;
-//     font-size: 25px;
-//     border-radius: 60px;
-//     background: linear-gradient(35deg, rgb(115, 188, 247),rgb(119, 8, 238));
-// }
 .up-icon {
     position: fixed;
     bottom: 18px;
