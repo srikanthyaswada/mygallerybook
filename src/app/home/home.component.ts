@@ -1,12 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   statusClass = 'not-active';
-
+  baseUrl = environment.root;
+  // imgUrl: any;
+  ngOnInit(): void {
+    // this.imgUrl = this.baseUrl + 'assets/images/gallerylogo2.png';
+  }
   scrollToContact(element: any) {
     element.scrollIntoView({
       behavior: 'smooth',
